@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #009739 0%, #006B2B 50%, #002E11 100%);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFDF00;
+}
+
+header h4 {
+    text-align: center;
+    color: #b8a004;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #0b5332;
+}
+
+.nav-fases {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn-fases {
+    background-color: #FFDF00;
+    border: 1px solid #045308;
+    border-radius: 15px;
+    width: 175px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn-fases a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #0e3d02;
+    font-weight: bold;
+    display: block;
+    line-height: 33px;
+}
+
+
+.container-grupos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 10%;
+}
+
+.item-container {
+    width: 320px; 
+    background-color: #0b531b;
+    border: 3px solid rgb(2, 114, 71);
+    border-radius: 19px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.item-container:hover {
+    transform: translateY(-5px); 
+}
+
+.item-container h1 {
+    color: #FFDF00;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.tabela-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    color: #b8a004;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0b5332;
+}
+
+
+.container-confrontos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 10%;
+}
+
+.confronto-card {
+    width: 300px;
+    background-color: #0b531b;
+    border: 3px solid rgb(2, 114, 71);
+    border-radius: 19px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.confronto-card h3 {
+    color: #FFDF00;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+
+.linha-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.nome-time {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.placar {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #FFDF00;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-avancar {
+    display: block;
+    margin: 30px auto;
+    background-color: #FFDF00;
+    color: #0e3d02;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.btn-avancar:hover {
+    transform: scale(1.05);
+}

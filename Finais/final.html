@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grande Final</title>
+        <link rel="stylesheet" href="../FaseDeGrupos/fasesdegrupos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body id="final">
+    <header>
+        <h1>SIMULADOR DE COPA DO MUNDO</h1>
+        <h4>GRANDE FINAL</h4>
+        <hr>
+    </header>
+
+    <nav class="nav-fases">
+        <button class="btn-fases"><a href="../FaseDeGrupos/fasesdegrupos.html">Grupos</a></button>
+        <button class="btn-fases"><a href="../Oitavas/oitavas.html">Oitavas</a></button>
+        <button class="btn-fases"><a href="../Quartas/quartas.html">Quartas</a></button>
+        <button class="btn-fases"><a href="../Semi/semifinais.html">Semifinais</a></button>
+        <button class="btn-fases"><a href="../Finais/final.html">Final</a></button>
+    </nav>
+
+    <section class="container-confrontos">
+        <div class="confronto-card" style="width: 400px; border: 4px solid #FFDF00;">
+            <h3 style="font-size: 1.5rem;">Disputa do Título</h3>
+            <div class="linha-time"><span class="nome-time" style="font-size: 1.3rem;">Carregando...</span><input type="number" class="placar" style="width: 60px; height: 45px; font-size: 1.4rem;"></div>
+            <div class="linha-time"><span class="nome-time" style="font-size: 1.3rem;">Carregando...</span><input type="number" class="placar" style="width: 60px; height: 45px; font-size: 1.4rem;"></div>
+        </div>
+    </section>
+
+    <button class="btn-avancar" onclick="revelarCampeao()">Descobrir o Campeão!</button>
+
+    <script>
+        function revelarCampeao() {
+            const inputs = document.querySelectorAll('.placar');
+            const time1 = inputs[0].getAttribute('data-time');
+            const time2 = inputs[1].getAttribute('data-time');
+            const gols1 = parseInt(inputs[0].value) || 0;
+            const gols2 = parseInt(inputs[1].value) || 0;
+            
+            let campeao = (gols1 >= gols2) ? time1 : time2;
+            
+            alert(`🎉 O GRANDE CAMPEÃO DA COPA DO MUNDO É: ${campeao.toUpperCase()}! 🎉`);
+        }
+    </script>
+    <script src="../simulador.js"></script>
+</body>
+</html>

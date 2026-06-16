@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oitavas de Final</title>
+    <link rel="stylesheet" href="../FaseDeGrupos/fasesdegrupos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body id="oitavas">
+    <header>
+        <h1>SIMULADOR DE COPA DO MUNDO</h1>
+        <h4>OITAVAS DE FINAL</h4>   
+        <hr>
+    </header>
+
+    <nav class="nav-fases">
+        <button class="btn-fases"><a href="../FaseDeGrupos/fasesdegrupos.html">Grupos</a></button>
+        <button class="btn-fases"><a href="../Oitavas/oitavas.html">Oitavas</a></button>
+        <button class="btn-fases"><a href="../Quartas/quartas.html">Quartas</a></button>
+        <button class="btn-fases"><a href="../Semi/semifinais.html">Semifinais</a></button>
+        <button class="btn-fases"><a href="../Finais/final.html">Final</a></button>
+    </nav>
+
+    <section class="container-confrontos">
+        <div class="confronto-card">
+            <h3>Jogo 1</h3>
+            <div class="linha-time"><span class="nome-time">Time A1</span><input type="number" class="placar" data-time="Time A1"></div>
+            <div class="linha-time"><span class="nome-time">Time B2</span><input type="number" class="placar" data-time="Time B2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 2</h3>
+            <div class="linha-time"><span class="nome-time">Time C1</span><input type="number" class="placar" data-time="Time C1"></div>
+            <div class="linha-time"><span class="nome-time">Time D2</span><input type="number" class="placar" data-time="Time D2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 3</h3>
+            <div class="linha-time"><span class="nome-time">Time E1</span><input type="number" class="placar" data-time="Time E1"></div>
+            <div class="linha-time"><span class="nome-time">Time F2</span><input type="number" class="placar" data-time="Time F2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 4</h3>
+            <div class="linha-time"><span class="nome-time">Time G1</span><input type="number" class="placar" data-time="Time G1"></div>
+            <div class="linha-time"><span class="nome-time">Time H2</span><input type="number" class="placar" data-time="Time H2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 5</h3>
+            <div class="linha-time"><span class="nome-time">Time B1</span><input type="number" class="placar" data-time="Time B1"></div>
+            <div class="linha-time"><span class="nome-time">Time A2</span><input type="number" class="placar" data-time="Time A2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 6</h3>
+            <div class="linha-time"><span class="nome-time">Time D1</span><input type="number" class="placar" data-time="Time D1"></div>
+            <div class="linha-time"><span class="nome-time">Time C2</span><input type="number" class="placar" data-time="Time C2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 7</h3>
+            <div class="linha-time"><span class="nome-time">Time F1</span><input type="number" class="placar" data-time="Time F1"></div>
+            <div class="linha-time"><span class="nome-time">Time E2</span><input type="number" class="placar" data-time="Time E2"></div>
+        </div>
+        <div class="confronto-card">
+            <h3>Jogo 8</h3>
+            <div class="linha-time"><span class="nome-time">Time H1</span><input type="number" class="placar" data-time="Time H1"></div>
+            <div class="linha-time"><span class="nome-time">Time G2</span><input type="number" class="placar" data-time="Time G2"></div>
+        </div>
+    </section>
+
+    <button class="btn-avancar" onclick="avancarFase('oitavas', '../Quartas/quartas.html')">Simular e ir para as Quartas</button>
+
+    <script src="../simulador.js"></script>
+</body>
+</html>

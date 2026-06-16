@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semifinais</title>
+    <link rel="stylesheet" href="../FaseDeGrupos/fasesdegrupos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="semifinais">
+    <header>
+        <h1>SIMULADOR DE COPA DO MUNDO</h1>
+        <h4>SEMIFINAIS</h4>
+        <hr>
+    </header>
+
+    <nav class="nav-fases">
+        <button class="btn-fases"><a href="../FaseDeGrupos/fasesdegrupos.html">Grupos</a></button>
+        <button class="btn-fases"><a href="../Oitavas/oitavas.html">Oitavas</a></button>
+        <button class="btn-fases"><a href="../Quartas/quartas.html">Quartas</a></button>
+        <button class="btn-fases"><a href="../Semi/semifinais.html">Semifinais</a></button>
+        <button class="btn-fases"><a href="../Finais/final.html">Final</a></button>
+    </nav>
+
+    <section class="container-confrontos">
+        <div class="confronto-card">
+            <h3>Semifinal 1</h3>
+            <div class="linha-time"><span class="nome-time">Carregando...</span><input type="number" class="placar">
+            </div>
+            <div class="linha-time"><span class="nome-time">Carregando...</span><input type="number" class="placar">
+            </div>
+        </div>
+        <div class="confronto-card">
+            <h3>Semifinal 2</h3>
+            <div class="linha-time"><span class="nome-time">Carregando...</span><input type="number" class="placar">
+            </div>
+            <div class="linha-time"><span class="nome-time">Carregando...</span><input type="number" class="placar">
+            </div>
+        </div>
+    </section>
+
+    <button class="btn-avancar" onclick="avancarFase('semifinais', '../Finais/final.html')">Simular e ir para a Grande Final</button>
+
+    <script src="../simulador.js"></script>
+</body>
+
+</html>

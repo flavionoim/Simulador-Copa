@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase de Grupos</title>
+    <link rel="stylesheet" href="./fasesdegrupos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Ajuste fino para os cards dos grupos se adaptarem ao tamanho do conteúdo */
+        .item-container {
+            height: auto !important; 
+            min-height: 300px;
+            padding: 20px 30px;
+        }
+        .tabela-cabecalho {
+            display: flex;
+            justify-content: space-between;
+            color: #b8a004;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #0b5332;
+        }
+    </style>
+</head>
+<body id="fasedegrupos">
+    <header>
+        <h1 style="margin-bottom: 20px;">SIMULADOR DE COPA DO MUNDO</h1>
+        <h4 style="margin-bottom: 20px;">FASE DE GRUPOS - DEFINA OS PONTOS</h4>
+        <hr>
+    </header>
+
+    <nav class="nav-fases">
+        <button class="btn-fases"><a href="../FaseDeGrupos/fasesdegrupos.html">Grupos</a></button>
+        <button class="btn-fases"><a href="../Oitavas/oitavas.html">Oitavas</a></button>
+        <button class="btn-fases"><a href="../Quartas/quartas.html">Quartas</a></button>
+        <button class="btn-fases"><a href="../Semi/semifinais.html">Semifinais</a></button>
+        <button class="btn-fases"><a href="../Finais/final.html">Final</a></button>
+    </nav>
+
+    <section class="container-grupos">
+        <div class="item-container">
+            <h1>Grupo A</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Catar</span><input type="number" class="placar pontos" data-grupo="A" data-time="Catar" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Equador</span><input type="number" class="placar pontos" data-grupo="A" data-time="Equador" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Senegal</span><input type="number" class="placar pontos" data-grupo="A" data-time="Senegal" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Holanda</span><input type="number" class="placar pontos" data-grupo="A" data-time="Holanda" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo B</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Inglaterra</span><input type="number" class="placar pontos" data-grupo="B" data-time="Inglaterra" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Irã</span><input type="number" class="placar pontos" data-grupo="B" data-time="Irã" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">EUA</span><input type="number" class="placar pontos" data-grupo="B" data-time="EUA" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">País de Gales</span><input type="number" class="placar pontos" data-grupo="B" data-time="País de Gales" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo C</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Argentina</span><input type="number" class="placar pontos" data-grupo="C" data-time="Argentina" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Arábia Saudita</span><input type="number" class="placar pontos" data-grupo="C" data-time="Arábia Saudita" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">México</span><input type="number" class="placar pontos" data-grupo="C" data-time="México" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Polônia</span><input type="number" class="placar pontos" data-grupo="C" data-time="Polônia" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo D</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">França</span><input type="number" class="placar pontos" data-grupo="D" data-time="França" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Austrália</span><input type="number" class="placar pontos" data-grupo="D" data-time="Austrália" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Dinamarca</span><input type="number" class="placar pontos" data-grupo="D" data-time="Dinamarca" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Tunísia</span><input type="number" class="placar pontos" data-grupo="D" data-time="Tunísia" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo E</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Espanha</span><input type="number" class="placar pontos" data-grupo="E" data-time="Espanha" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Costa Rica</span><input type="number" class="placar pontos" data-grupo="E" data-time="Costa Rica" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Alemanha</span><input type="number" class="placar pontos" data-grupo="E" data-time="Alemanha" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Japão</span><input type="number" class="placar pontos" data-grupo="E" data-time="Japão" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo F</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Bélgica</span><input type="number" class="placar pontos" data-grupo="F" data-time="Bélgica" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Canadá</span><input type="number" class="placar pontos" data-grupo="F" data-time="Canadá" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Marrocos</span><input type="number" class="placar pontos" data-grupo="F" data-time="Marrocos" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Croácia</span><input type="number" class="placar pontos" data-grupo="F" data-time="Croácia" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo G</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Brasil</span><input type="number" class="placar pontos" data-grupo="G" data-time="Brasil" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Sérvia</span><input type="number" class="placar pontos" data-grupo="G" data-time="Sérvia" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Suíça</span><input type="number" class="placar pontos" data-grupo="G" data-time="Suíça" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Camarões</span><input type="number" class="placar pontos" data-grupo="G" data-time="Camarões" value="0" min="0" max="9"></div>
+        </div>
+
+        <div class="item-container">
+            <h1>Grupo H</h1>
+            <div class="tabela-cabecalho"><span>Seleção</span><span>Pts</span></div>
+            <div class="linha-time"><span class="nome-time">Portugal</span><input type="number" class="placar pontos" data-grupo="H" data-time="Portugal" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Gana</span><input type="number" class="placar pontos" data-grupo="H" data-time="Gana" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Uruguai</span><input type="number" class="placar pontos" data-grupo="H" data-time="Uruguai" value="0" min="0" max="9"></div>
+            <div class="linha-time"><span class="nome-time">Coreia do Sul</span><input type="number" class="placar pontos" data-grupo="H" data-time="Coreia do Sul" value="0" min="0" max="9"></div>
+        </div>
+    </section>
+
+    <button class="btn-avancar" onclick="avancarFaseGrupos()">Concluir Grupos e ir para Oitavas</button>
+
+    <script src="../simulador.js"></script>
+</body>
+</html> 
